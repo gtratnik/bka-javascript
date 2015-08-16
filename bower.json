@@ -1,0 +1,20 @@
+{
+  "name": "BKA-javascript",
+  "version": "0.0.0",
+  "authors": [
+    "Grega Tratnik <grega.tratnik@gmail.com>"
+  ],
+  "description": "BKA angularJS project",
+  "keywords": [
+    "BKA",
+    "javascript",
+    "angularJS"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.4",
+    "angular-ui-router": "~0.2.15",
+    "qunit": "~1.18.0"
+  }
+}

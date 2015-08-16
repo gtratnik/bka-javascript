@@ -1,0 +1,34 @@
+<div class="well container" ng-controller="HomeController">
+		<div class="text-center">
+			<div ng-show="isDataAccessible">
+				<div class="btn-group" role="group">
+				  <button type="button" class="btn btn-default" ng-click="run($index)" ng-repeat="currency in currencies track by $index">{{currency.name | uppercase}}</button>
+				</div>
+				<table class="table table-striped" ng-show="items.length > 0">
+					<thead>
+						<tr>
+							<td>Name</td>
+							<td>Price({{currencyName}})</td>
+							<td>Type</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in items">
+							<td class="col-xs-4">
+								{{item.name}}
+							</td>
+							<td class="col-xs-4">
+								{{item.price | number : 2}}
+							</td class="col-xs-4">
+							<td>
+								{{item.type}}
+							</td>
+						<tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div ng-show="!isDataAccessible" class="text-center">
+			<h1>{{message}}</h1>
+		</div>
+</div>

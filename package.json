@@ -1,0 +1,18 @@
+{
+  "name": "bka-javascript",
+  "version": "1.0.0",
+  "description": "BKA javascript project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-flatten": "^0.1.1",
+    "gulp-webserver": "^0.9.1",
+    "yargs": "^3.19.0"
+  }
+}
